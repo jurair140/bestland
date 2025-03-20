@@ -40,12 +40,8 @@
         }
 
         /* Header */
-        .main-header, .header-sticky {
-            /* background-color: var(--secondary-color); */
-        }
-        .navbar-brand img, .footer-logo img {
-            filter: brightness(0) invert(1); /* Adjust logo for dark background */
-        }
+        
+      
         .nav-link, .header-btn .btn-default {
             color: #fff;
         }
@@ -131,7 +127,7 @@
     <div class="preloader">
         <div class="loading-container">
             <div class="loading"></div>
-            <div id="loading-icon"><img src="images/loader.svg" alt=""></div>
+            <div id="loading-icon"><img src="images/loaderlogo.png" alt=""></div>
         </div>
     </div>
     <!-- Preloader End -->
@@ -142,16 +138,19 @@
             <nav class="container">
                 <div class="navbar navbar-expand-lg">
                     <!-- Logo Start -->
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/logo.svg" alt="Logo" class="">
-                    </a>
+                     <div style="max-width: 20%;">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/BLC LOGO.png" alt="Logo" class="w-50"  >
+                        </a>
+                     </div>
+                   
                     <!-- Logo End -->
 
                     <!-- Main Menu Start -->
                     <div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item submenu"><a class="nav-link" href="index.html">Home</a>
+                                <li class="nav-item submenu"><a class="nav-link" href="index-slider.html">Home</a>
                                     <ul>
                                         <li class="nav-item"><a class="nav-link" href="index-2.html">Home - Image</a></li>
                                         <li class="nav-item"><a class="nav-link" href="index-video.html">Home - Video</a></li>
@@ -160,18 +159,8 @@
                                 </li>                                
                                 <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                                 <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
-                                    <ul>                                        
-                                        <li class="nav-item"><a class="nav-link" href="service-single.html">Service Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="project-single.html">Project Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="blog-single.html">Blog Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="image-gallery.html">Image Gallery</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="404.html">404</a></li>
-                                    </ul>
-                                </li>
+                                <li class="nav-item"><a class="nav-link" href="projects.html">Portfolio</a></li>
+                              
                                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>                             
                             </ul>
                         </div>
@@ -978,7 +967,7 @@
                             <div class="col-md-6">
                                 <!-- Footer Logo Start -->
                                 <div class="footer-logo">
-                                    <img src="images/footer-logo.svg" alt="">
+                                    <img src="images/BLC LOGO.png" class="w-25" alt="">
                                 </div>
                                 <!-- Footer Logo End -->
                             </div>
@@ -990,9 +979,9 @@
                                         <h3>follow our socials</h3>
                                     </div>
                                     <ul>
+                                        <li><a href="https://www.instagram.com/blc_dxb?igsh=NHJxbDNxeDhqenhj"><i class="fa-brands fa-instagram"></i></a></li>
                                         <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                                         <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                                 <!-- Footer Social Link End -->
@@ -1002,37 +991,24 @@
                     <!-- Footer Header End -->
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <!-- Footer Links Start -->
                      <div class="footer-links">
-                        <h3>information</h3>
+                        <h3>Quick Links</h3>
                         <ul>
-                            <li><a href="about.html">about our company</a></li>
-                            <li><a href="services.html">view our service</a></li>
-                            <li><a href="#">careers at company</a></li>
-                            <li><a href="blog.html">read our blog</a></li>
-                            <li><a href="projects.html">our latest projects</a></li>
+                            <li><a href="index-slider.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Service</a></li>
+                            <li><a href="projects.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
                         </ul>
                      </div>
                     <!-- Footer Links End -->
                 </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <!-- Footer Links Start -->
-                     <div class="footer-links">
-                        <h3>portfolio</h3>
-                        <ul>
-                            <li><a href="project-single.html">luxury home design</a></li>
-                            <li><a href="project-single.html">residential clasickitchen design</a></li>
-                            <li><a href="project-single.html">commercial space design</a></li>
-                            <li><a href="project-single.html">residential clasickitchen design</a></li>
-                            <li><a href="project-single.html">renovation and restoration design</a></li>
-                        </ul>
-                     </div>
-                    <!-- Footer Links End -->
-                </div>
+               
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <!-- Footer Contact Box Start -->
                     <div class="footer-contact-box footer-links">
                         <h3>contact us</h3>
@@ -1072,7 +1048,7 @@
                     <!-- Footer Contact Box End -->
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <!-- Footer Newsletter Form Start -->
                     <div class="footer-latest-news footer-links">
                         <h3>get the latest trending news</h3>
