@@ -456,7 +456,7 @@ header.main-header .header-sticky.active{
 }
 
 .navbar{
-	padding: 30px 0;
+	padding: 30px 0 15px;
 	align-items: center;
 	border-bottom: 1px solid var(--dark-divider-color);
 }
@@ -3613,13 +3613,15 @@ header.main-header .header-sticky.active .navbar{
 @media only screen and (max-width: 991px){
 
 	.navbar{
-		padding: 20px 0;
+		padding-top: 0;
 	}
+
 	
 	.slicknav_nav li,
 	.slicknav_nav ul{
         display: block;
     }
+	
 
 	.responsive-menu,
     .navbar-toggle{
@@ -4292,6 +4294,8 @@ header.main-header .header-sticky.active .navbar{
 
 @media only screen and (max-width: 767px){
 
+	
+
 	.section-row{
 		margin-bottom: 30px;
 	}
@@ -4703,3 +4707,4 @@ header.main-header .header-sticky.active .navbar{
         max-width: 100%;
     }
 }
+
