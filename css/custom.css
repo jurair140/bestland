@@ -1282,12 +1282,15 @@ header.main-header .header-sticky.active .navbar{
 	left: 40px;
 	right: 40px;
 	z-index: 1;
+	background-color: #4b4d4bc2;
+	border-radius: 5px;
+	padding: 5px;
 }
 
 .service-content h3{
 	font-size: 20px;
 	text-transform: capitalize;
-	color: var(--white-color);
+	/* color: var(--white-color); */
 	margin-bottom: 10px;
 }
 
@@ -1442,6 +1445,8 @@ header.main-header .header-sticky.active .navbar{
 	height: calc(100% - 30px);
 	margin-bottom: 30px;
 }
+
+
 
 .project-featured-image figure::before{
 	content: '';
