@@ -38,15 +38,15 @@
 /*** 	 01. Global Variables	  ***/
 /************************************/	
 
-:root{
-	--primary-color			: #192324;
-	--secondery-color		: #F8F8F8;
-	--text-color			: #283132;
-	--accent-color			: #7C877F;
-	--white-color			: #FFFFFF;
-	--divider-color			: #EAF0EC;
-	--dark-divider-color	: #FFFFFF1A;
-	--error-color			: rgb(230, 87, 87);
+:root {
+	--primary-color			: #3d3d3d; /* Dark gray as primary */
+	--secondery-color		: #F8F8F8; /* Light gray background unchanged */
+	--text-color			: #3d3d3d; /* Dark gray for text */
+	--accent-color			: #c2363e; /* Vibrant red as accent */
+	--white-color			: #FFFFFF; /* White unchanged */
+	--divider-color			: #EAF0EC; /* Light divider unchanged */
+	--dark-divider-color	: #FFFFFF1A; /* Dark divider unchanged */
+	--error-color			: rgb(230, 87, 87); /* Error color unchanged */
 	--default-font			: "Hanken Grotesk", sans-serif;
 }
 
@@ -1282,7 +1282,7 @@ header.main-header .header-sticky.active .navbar{
 	left: 40px;
 	right: 40px;
 	z-index: 1;
-	background-color: #4b4d4bc2;
+	background-color: #969796c2;
 	border-radius: 5px;
 	padding: 5px;
 }
@@ -1295,7 +1295,7 @@ header.main-header .header-sticky.active .navbar{
 }
 
 .service-content h3 a{
-	color: inherit;
+	color: #c2363e;
 }
 
 .service-content p{
@@ -3591,7 +3591,15 @@ header.main-header .header-sticky.active .navbar{
 .error-page-content-body p{
 	font-weight: 500;
 	margin-bottom: 20px;
+
 }
+
+
+
+
+
+
+
 
 /************************************/
 /***      26. Responsive css      ***/
@@ -4711,5 +4719,457 @@ header.main-header .header-sticky.active .navbar{
 	.error-page-image img{
         max-width: 100%;
     }
+}
+
+
+
+
+
+
+/************************************/
+/*** 	 01. Global Variables	  ***/
+/************************************/
+
+
+/************************************/
+/*** 	   02. General css		  ***/
+/************************************/
+
+body {
+	font-family: var(--default-font);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.6em;
+	background-color: var(--white-color);
+	color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-weight: 700;
+	line-height: 1.1em;
+	color: var(--primary-color); /* #3d3d3d */
+}
+
+.btn-default {
+	background: var(--accent-color); /* #c2363e */
+	color: var(--white-color);
+}
+
+.btn-default:hover {
+	background: transparent;
+	color: var(--white-color);
+}
+
+.btn-default::after {
+	background: var(--primary-color); /* #3d3d3d */
+}
+
+.btn-default.btn-highlighted {
+	background-color: var(--white-color);
+	color: var(--accent-color); /* #c2363e */
+}
+
+.btn-default.btn-highlighted::after {
+	background-color: var(--accent-color); /* #c2363e */
+}
+
+.cb-cursor:before {
+	background: var(--accent-color); /* #c2363e */
+}
+
+.preloader {
+	background-color: var(--accent-color); /* #c2363e */
+}
+
+.section-title h3 {
+	color: var(--accent-color); /* #c2363e */
+}
+
+.section-title h1 span,
+.section-title h2 span {
+	color: var(--accent-color); /* #c2363e */
+}
+
+/************************************/
+/*** 	   03. Header css		 ****/
+/************************************/
+
+header.main-header .header-sticky.active {
+	background: var(--primary-color); /* #3d3d3d */
+}
+
+.main-menu ul li a {
+	color: var(--white-color);
+}
+
+.main-menu ul li a:hover,
+.main-menu ul li a:focus {
+	color: var(--accent-color); /* #c2363e */
+}
+
+.main-menu ul ul {
+	background-color: var(--accent-color); /* #c2363e */
+}
+
+.main-menu ul ul li a {
+	color: var(--white-color);
+}
+
+.main-menu ul ul li a:hover,
+.main-menu ul ul li a:focus {
+	color: var(--primary-color); /* #3d3d3d */
+}
+
+.slicknav_btn {
+	background: var(--accent-color); /* #c2363e */
+}
+
+.slicknav_menu {
+	background: var(--accent-color); /* #c2363e */
+}
+
+.slicknav_nav .slicknav_row,
+.slicknav_nav li a {
+	color: var(--white-color);
+}
+
+.slicknav_nav a:hover,
+.slicknav_nav a:focus,
+.slicknav_nav .slicknav_row:hover {
+	color: var(--primary-color); /* #3d3d3d */
+}
+
+/************************************/
+/***        04. Hero css	      ***/
+/************************************/
+
+.hero.hero-slider-layout .hero-pagination .swiper-pagination-bullet-active {
+	background-color: var(--accent-color); /* #c2363e */
+}
+
+/************************************/
+/***       05. About Us css 	  ***/
+/************************************/
+
+.experience-counter {
+	background-color: var(--accent-color); /* #c2363e */
+}
+
+.feedback-counter p {
+	background-color: var(--accent-color); /* #c2363e */
+}
+
+.feedback-counter:hover p {
+	background-color: var(--primary-color); /* #3d3d3d */
+}
+
+.about-us-content-list ul li {
+	color: var(--primary-color); /* #3d3d3d */
+}
+
+.about-us-content-list ul li::before {
+	color: var(--accent-color); /* #c2363e */
+}
+
+.about-contact-item .icon-box {
+	background-color: var(--accent-color); /* #c2363e */
+}
+
+.about-contact-item:hover .icon-box {
+	background-color: var(--primary-color); /* #3d3d3d */
+}
+
+.about-contact-content p {
+	color: var(--primary-color); /* #3d3d3d */
+}
+
+/************************************/
+/***     06. Why Choose Us css    ***/
+/************************************/
+
+.why-choose-item .icon-box::before {
+	background-color: var(--primary-color); /* #3d3d3d */
+}
+
+.why-choose-item-content p {
+	color: var(--primary-color); /* #3d3d3d */
+}
+
+/************************************/
+/***     07. Our Services css     ***/
+/************************************/
+
+.service-btn a {
+	background-color: var(--accent-color); /* #c2363e */
+}
+
+.service-btn a:hover {
+	background-color: var(--primary-color); /* #3d3d3d */
+}
+
+/************************************/
+/***      08. Intro Video css     ***/
+/************************************/
+
+.video-play-button a:hover {
+	border-color: var(--primary-color); /* #3d3d3d */
+	color: var(--primary-color); /* #3d3d3d */
+}
+
+/************************************/
+/***    09. Latest Project css    ***/
+/************************************/
+
+.our-Project-nav ul li a {
+	color: var(--primary-color); /* #3d3d3d */
+}
+
+.our-Project-nav ul li a:after,
+.our-Project-nav ul li a:before {
+	background-color: var(--accent-color); /* #c2363e */
+}
+
+.project-btn a {
+	background: var(--dark-divider-color);
+}
+
+.project-btn a:hover {
+	background: var(--primary-color); /* #3d3d3d */
+}
+
+/************************************/
+/***      10. How We Work css     ***/
+/************************************/
+
+.how-we-work {
+	background: var(--primary-color); /* #3d3d3d */
+}
+
+/************************************/
+/***      11. Our Skills css      ***/
+/************************************/
+
+.skill-progress .count-bar {
+	background-color: var(--primary-color); /* #3d3d3d */
+}
+
+/************************************/
+/***   12. Our Testimonials css   ***/
+/************************************/
+
+.testimonial-rating i {
+	color: var(--primary-color); /* #3d3d3d */
+}
+
+.testimonial-content p {
+	color: var(--primary-color); /* #3d3d3d */
+}
+
+.testimonial-client-rating {
+	background: var(--accent-color); /* #c2363e */
+}
+
+/************************************/
+/***       13. Our Blog css       ***/
+/************************************/
+
+.post-item-btn a {
+	color: var(--primary-color); /* #3d3d3d */
+}
+
+/************************************/
+/***      	14. Footer css 		  ***/
+/************************************/
+
+.main-footer {
+	background: var(--primary-color); /* #3d3d3d */
+}
+
+.footer-social-links ul li a {
+	background: var(--white-color);
+}
+
+.footer-social-links ul li a i {
+	color: var(--accent-color); /* #c2363e */
+}
+
+.footer-social-links ul li a:hover {
+	background: var(--accent-color); /* #c2363e */
+}
+
+.footer-links ul li:hover {
+	color: var(--accent-color); /* #c2363e */
+}
+
+.footer-newsletter-form button i {
+	color: var(--accent-color); /* #c2363e */
+}
+
+.footer-newsletter-form button:hover i {
+	color: var(--primary-color); /* #3d3d3d */
+}
+
+/************************************/
+/***     15. About Us Page css 	  ***/
+/************************************/
+
+.about-facility-item .icon-box:before {
+	background: var(--primary-color); /* #3d3d3d */
+}
+
+.vision-mission {
+	background: linear-gradient(180deg, var(--primary-color) 60%, var(--white-color) 40%); /* #3d3d3d */
+}
+
+.vision-mission-item .icon-box:before {
+	background: var(--primary-color); /* #3d3d3d */
+}
+
+.team-readmore-btn a {
+	background-color: var(--accent-color); /* #c2363e */
+}
+
+.team-readmore-btn a:hover {
+	background-color: var(--primary-color); /* #3d3d3d */
+}
+
+.team-social-icon ul li a {
+	color: var(--accent-color); /* #c2363e */
+}
+
+.team-social-icon ul li a:hover {
+	background: var(--primary-color); /* #3d3d3d */
+}
+
+.faq-accordion .accordion-item .accordion-button::after,
+.faq-accordion .accordion-item .accordion-button.collapsed::after {
+	color: var(--primary-color); /* #3d3d3d */
+}
+
+/************************************/
+/***     16. Services Page css 	  ***/
+/************************************/
+
+/************************************/
+/***    17. Service Single css 	  ***/
+/************************************/
+
+.service-catagery-list ul li a {
+	color: var(--accent-color); /* #c2363e */
+}
+
+.service-catagery-list ul li:hover a {
+	color: var(--primary-color); /* #3d3d3d */
+}
+
+.sidebar-cta-contact-item .icon-box::before {
+	background-color: var(--primary-color); /* #3d3d3d */
+}
+
+.service-entry h2 span {
+	color: var(--accent-color); /* #c2363e */
+}
+
+.service-entry ul li::before {
+	color: var(--accent-color); /* #c2363e */
+}
+
+/************************************/
+/***     18. Blog Archive css 	  ***/
+/************************************/
+
+.page-pagination ul li a,
+.page-pagination ul li span {
+	background: var(--accent-color); /* #c2363e */
+}
+
+.page-pagination ul li.active a,
+.page-pagination ul li a:hover {
+	background: var(--primary-color); /* #3d3d3d */
+}
+
+/************************************/
+/***     19. Blog Single css 	  ***/
+/************************************/
+
+.post-entry a {
+	color: var(--accent-color); /* #c2363e */
+}
+
+.post-entry blockquote {
+	background: url(../images/icon-blockquote.svg), var(--accent-color); /* #c2363e */
+}
+
+.post-tags .tag-links a {
+	background: var(--accent-color); /* #c2363e */
+}
+
+.post-tags .tag-links a:hover {
+	background: var(--primary-color); /* #3d3d3d */
+}
+
+.post-social-sharing ul li a {
+	background: var(--accent-color); /* #c2363e */
+}
+
+.post-social-sharing ul li:hover a {
+	background: var(--primary-color); /* #3d3d3d */
+}
+
+/************************************/
+/***     20. Project Page css 	  ***/
+/************************************/
+
+/************************************/
+/***    21. Project Single css 	  ***/
+/************************************/
+
+.project-detail-item .icon-box::before {
+	background-color: var(--accent-color); /* #c2363e */
+}
+
+.project-detail-item:hover .icon-box i {
+	color: var(--white-color);
+}
+
+.project-detail-content p {
+	color: var(--accent-color); /* #c2363e */
+}
+
+.project-entry ul li::before {
+	color: var(--accent-color); /* #c2363e */
+}
+
+/************************************/
+/***    22. Image Gallery css 	  ***/
+/************************************/
+
+/************************************/
+/***    	23. FAQs Page css 	  ***/
+/************************************/
+
+.faq-catagery-list ul li a {
+	color: var(--accent-color); /* #c2363e */
+}
+
+.faq-catagery-list ul li:hover a {
+	color: var(--primary-color); /* #3d3d3d */
+}
+
+/************************************/
+/***   24. Contact Us Page css 	  ***/
+/************************************/
+
+.contact-form .form-control {
+	color: var(--text-color); /* #3d3d3d */
+}
+
+.contact-info-item .icon-box i {
+	color: var(--accent-color); /* #c2363e */
+}
+
+.contact-info-item:hover .icon-box:before {
+	background: var(--primary-color); /* #3d3d3d */
 }
 
