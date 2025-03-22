@@ -120,17 +120,7 @@
 	}
 
 	/* Skill Bar */
-	if ($('.skills-progress-bar').length) {
-		$('.skills-progress-bar').waypoint(function() {
-			$('.skillbar').each(function() {
-				$(this).find('.count-bar').animate({
-				width:$(this).attr('data-percent')
-				},2000);
-			});
-		},{
-			offset: '50%'
-		});
-	}
+	
 
 	/* Youtube Background Video JS */
 	if ($('#herovideo').length) {
@@ -258,65 +248,14 @@
 	}
 
 	/* Zoom Gallery screenshot */
-	$('.gallery-items').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		closeOnContentClick: false,
-		closeBtnInside: false,
-		mainClass: 'mfp-with-zoom',
-		image: {
-			verticalFit: true,
-		},
-		gallery: {
-			enabled: true
-		},
-		zoom: {
-			enabled: true,
-			duration: 300, // don't foget to change the duration also in CSS
-			opener: function(element) {
-			  return element.find('img');
-			}
-		}
-	});
+
 
 	/* Contact form validation */
-	var $contactform = $("#contactForm");
-	$contactform.validator({focus: false}).on("submit", function (event) {
-		if (!event.isDefaultPrevented()) {
-			event.preventDefault();
-			submitForm();
-		}
-	});
+	
 
-	function submitForm(){
-		/* Ajax call to submit form */
-		$.ajax({
-			type: "POST",
-			url: "form-process.php",
-			data: $contactform.serialize(),
-			success : function(text){
-				if (text === "success"){
-					formSuccess();
-				} else {
-					submitMSG(false,text);
-				}
-			}
-		});
-	}
+	
 
-	function formSuccess(){
-		$contactform[0].reset();
-		submitMSG(true, "Message Sent Successfully!")
-	}
-
-	function submitMSG(valid, msg){
-		if(valid){
-			var msgClasses = "h4 text-success";
-		} else {
-			var msgClasses = "h4 text-danger";
-		}
-		$("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
-	}
+	
 	/* Contact form validation end */
 
 	/* Our Project (filtering) Start */
