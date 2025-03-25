@@ -1916,8 +1916,20 @@ header.main-header .header-sticky.active .navbar{
 }
 
 .footer-copyright-text p{
+	font-size: 14px;
 	color: var(--white-color);
 	margin: 0;
+}
+
+.designer-link {
+	color: #ffffff;
+	text-decoration: none;
+	transition: color 0.3s ease-in-out;
+}
+
+.designer-link:hover {
+	color: #f39c12; /* Slight orange hover effect */
+	text-decoration: underline;
 }
 
 /************************************/
@@ -4028,6 +4040,9 @@ header.main-header .header-sticky.active {
 
 .about-facility-item .icon-box:before {
 	background: var(--primary-color); /* #3d3d3d */
+}
+.about-facility-list{
+	margin-bottom: 100px;
 }
 
 .vision-mission {
